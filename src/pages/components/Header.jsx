@@ -16,8 +16,8 @@ export default function Header(props) {
                 <Link className="w-36" to="/">
                     <img src={logoImage} alt="Maple Ridge High School Logo" />
                 </Link>
-                <h1 className="w-full justify-center text-center mt-3 text-[1rem] md:m-0 md:text-[4rem] p-6 text-white truncate">MAPLE RIDGE BUCKS</h1>
-                <button onclick={toggleNavbar} className="md:hidden btn-primary">Image</button>
+                <h1 className="w-full justify-center text-center mt-1 text-[1.5rem] md:m-0 md:text-[4rem] p-6 text-white truncate">MAPLE RIDGE <span className="hidden md:inline">BUCKS</span></h1>
+                <button onclick={toggleNavbar} className="md:hidden btn-primary">Image</button> 
             </div>
             <div className="hidden md:flex justify-around justify-items-center items-center bg-mapletan w-full h-20">
             
