@@ -2,6 +2,7 @@ import React from 'react';
 import logoImage from "../../assets/mapleridge.png"
 import menuImage from "../../assets/menu.svg"
 import { Link } from "react-router-dom"
+import MobileNav from './MobileNavbar'
 
 export default function Header(props) {
     
@@ -9,8 +10,9 @@ export default function Header(props) {
 
     function toggleNavbar() {
         setIsOpen(prevIsOpen => !prevIsOpen)
-        console.log(isOpen)
     }
+
+    console.log(isOpen)
 
     return (
         <nav className="top-0 left-0">
@@ -23,7 +25,7 @@ export default function Header(props) {
                     <img src={menuImage} alt="Menu Icon" />
                 </button> 
             </div>
-
+            {isOpen && <MobileNav />}
 
             <div className="hidden sm:flex justify-around justify-items-center items-center bg-mapletan w-full h-20">
             
