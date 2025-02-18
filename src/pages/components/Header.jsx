@@ -15,7 +15,7 @@ export default function Header(props) {
     console.log(isOpen)
 
     return (
-        <nav className="top-0 left-0">
+        <nav className="relative top-0 left-0">
             <div className="flex align-items-center bg-maplegreen">
                 <Link className="w-36" to="/home">
                     <img src={logoImage} alt="Maple Ridge High School Logo" />
@@ -23,7 +23,7 @@ export default function Header(props) {
                 <h1 className="w-full justify-center text-center mt-1 text-[1.2rem] sm:m-0 sm:text-[4rem] p-6 text-white truncate">MAPLE RIDGE <span className="hidden sm:inline">BUCKS</span></h1>
                 <button onClick={toggleNavbar} className="cursor-pointer sm:hidden w-15">
                     <img src={menuImage} alt="Menu Icon" />
-                </button> 
+                </button>
             </div>
             {isOpen && <MobileNav />}
 
