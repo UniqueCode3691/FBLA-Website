@@ -28,11 +28,10 @@ export default function Header(props) {
             {isOpen && <MobileNav />}
 
             <div className="hidden sm:flex justify-around justify-items-center items-center bg-mapletan w-full h-20">
-            
-                <Link className="peer/bo text-sm sm:text-lg min-w-30 font-bold hover:text-slate-600 active:underline" to="/box-office">BOX OFFICE</Link>
-                <Link className="peer/r text-sm sm:text-lg min-w-30 font-bold hover:text-slate-600 active:underline" to="/rentals">RENTALS</Link>
-                <Link className="peer/a text-sm sm:text-lg min-w-30 font-bold hover:text-slate-600 active:underline" to="/athletics">ATHLETICS</Link>
-                <Link className="peer/au text-sm sm:text-lg min-w-30 font-bold hover:text-slate-600 active:underline" to="/about-us">ABOUT US</Link>
+                <Link className="peer/bo text-lg min-w-30 font-bold hover:text-slate-600 active:underline" to="/box-office">BOX OFFICE</Link>
+                <Link className="peer/r text-lg min-w-30 font-bold hover:text-slate-600 active:underline" to="/rentals">RENTALS</Link>
+                <Link className="peer/a text-lg min-w-30 font-bold hover:text-slate-600 active:underline" to="/athletics">ATHLETICS</Link>
+                <Link className="peer/au text-lg min-w-30 font-bold hover:text-slate-600 active:underline" to="/about-us">ABOUT US</Link>
             </div>
         </nav>
     )
