@@ -28,7 +28,7 @@ export default function Header() {
                 <button onClick={toggleNavbar} className={`cursor-pointer sm:hidden w-15 ${isSpinning ? 'animate-spin' : ''} transition-transform duration-1000 ease-in-out`}>
                     <img src={menuImage} alt="Menu Icon" />
                 </button>
-                <div className={`absolute right-0 top-20 w-full opacity-100 z-50 transform transition-transform duration-500 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                <div className={`absolute right-0 top-20 w-full opacity-100 z-50 transform transition-transform duration-500 ease-in-out ${isOpen ? 'translate-x-0' : 'hidden translate-x-full'}`}>
                     <div className="flex flex-col justify-end ml-auto sm:hidden justify-items-center items-center bg-mapletan w-8/10">
                         <Link className="p-5 text-lg font-bold hover:text-slate-600 active:underline transition-transform duration-300 ease-in-out transform hover:scale-110 active:scale-110" to="/box-office">BOX OFFICE</Link>
                         <Link className="p-5 text-lg font-bold hover:text-slate-600 active:underline transition-transform duration-300 ease-in-out transform hover:scale-110 active:scale-110" to="/rentals">RENTALS</Link>
