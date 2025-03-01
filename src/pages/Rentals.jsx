@@ -62,8 +62,8 @@ export default function Rentals() {
             <div className="flex">
                 <div className="w-full h-50 bg-cover flex flex-col items-center" style={{ backgroundImage: `url(${gymImage})` }}>
                     <div className="relative top-0 right-0 inset-0 w-full h-50 bg-black opacity-60"></div>
-                    <h1 className="relative top-0 right-0 h-90 text-5xl -mt-30 text-center font-bold text-maplegreen">RENTALS</h1>
-                    <p className="relative top-0 right-0 -mt-75 sm:mx-15 text-center text-xl font-bold text-white ">Rentals start at the affordable price of $30.00 and $15 for every hour! (Plus tax)</p>
+                    <h1 className="relative top-0 right-0 h-90 text-5xl -mt-40 sm:-mt-30 text-center font-bold text-maplegreen">RENTALS</h1>
+                    <p className="relative top-0 right-0 -mt-75 sm:mx-15 text-center text-l sm:text-xl font-bold text-white ">Rentals start at the affordable price of $30.00 and $15 for every hour! (Plus tax)</p>
                 </div>
             </div>
             <div className="w-full mx-auto p-4 mt-5">
@@ -85,7 +85,7 @@ export default function Rentals() {
                 </div>
                 <table className="w-20 sm:w-full table-auto border-collapse">
                     <thead>
-                        <tr className="bg-mapleorange">
+                        <tr className="bg-gray-400">
                             <th className="p-2 text-center">Sun</th>
                             <th className="p-2 text-center">Mon</th>
                             <th className="p-2 text-center">Tue</th>

@@ -28,9 +28,9 @@ export default function Home() {
             <div className="flex bg-maplebrown">  
                 <img src={gameImage} alt="Ball Image" className="hidden sm:block h-8/10 w-8/10 my-10 ml-10 rounded-2xl"/>
                 <div className="w-full flex flex-col items-center">
-                    <h1 className="mt-10 sm:mt-25 text-5xl text-black font-bold">ATHLETICS</h1>
+                    <h1 className="mt-10 sm:mt-25 text-5xl text-black font-bold">ABOUT US</h1>
                     <p className="mt-5 mx-5 text-center text-xl sm:mx-15">Our Bucks dominate the court in a multitude of sports such as basketball and volleyball. <span className="font-bold">Learn more about them.</span></p>
-                    <Link className="mb-2 text-white text-xl mt-5 sm:mt-15 py-1 px-3 bg-maplegreen rounded-xl border-4 border-mapleorange hover:cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-110" to="/athletics">LEARN MORE</Link>
+                    <Link className="mb-2 text-white text-xl mt-5 sm:mt-15 py-1 px-3 bg-maplegreen rounded-xl border-4 border-mapleorange hover:cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-110" to="/about-us">LEARN MORE</Link>
                 </div>
             </div>
             <Footer />

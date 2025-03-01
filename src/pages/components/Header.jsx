@@ -32,7 +32,6 @@ export default function Header() {
                     <div className="flex flex-col justify-end ml-auto sm:hidden justify-items-center items-center bg-mapletan w-8/10">
                         <Link className="p-5 text-lg font-bold hover:text-slate-600 active:underline transition-transform duration-300 ease-in-out transform hover:scale-110 active:scale-110" to="/box-office">BOX OFFICE</Link>
                         <Link className="p-5 text-lg font-bold hover:text-slate-600 active:underline transition-transform duration-300 ease-in-out transform hover:scale-110 active:scale-110" to="/rentals">RENTALS</Link>
-                        <Link className="p-5 text-lg font-bold hover:text-slate-600 active:underline transition-transform duration-300 ease-in-out transform hover:scale-110 active:scale-110" to="/athletics">ATHLETICS</Link>
                         <Link className="p-5 text-lg font-bold hover:text-slate-600 active:underline transition-transform duration-300 ease-in-out transform hover:scale-110 active:scale-110" to="/about-us">ABOUT US</Link>
                     </div>
                 </div>
@@ -42,7 +41,6 @@ export default function Header() {
                 <div className="hidden sm:flex justify-around justify-items-center items-center bg-mapletan w-full h-20">
                     <Link className="text-lg font-bold hover:text-slate-600 active:underline transition-transform duration-300 ease-in-out transform hover:scale-110 active:scale-110" to="/box-office">BOX OFFICE</Link>
                     <Link className="text-lg font-bold hover:text-slate-600 active:underline transition-transform duration-300 ease-in-out transform hover:scale-110 active:scale-110" to="/rentals">RENTALS</Link>
-                    <Link className="text-lg font-bold hover:text-slate-600 active:underline transition-transform duration-300 ease-in-out transform hover:scale-110 active:scale-110" to="/athletics">ATHLETICS</Link>
                     <Link className="text-lg font-bold hover:text-slate-600 active:underline transition-transform duration-300 ease-in-out transform hover:scale-110 active:scale-110" to="/about-us">ABOUT US</Link>
                 </div>
             </nav>
