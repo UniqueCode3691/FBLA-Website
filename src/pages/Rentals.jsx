@@ -32,6 +32,10 @@ export default function Rentals() {
         const newYear = currentMonth === 11 ? currentYear + 1 : currentYear;
         setCurrentDate(new Date(newYear, newMonth, 1));
     };
+    const isBooked = (day) => {
+        const holidays = [1, 3, 5, 9, 11, 19, 25, 28]; // Example: Highlight December 25th
+        return holidays.includes(day);
+    };
     const monthNames = [
         'January', 'February', 'March', 'April', 'May', 'June',
         'July', 'August', 'September', 'October', 'November', 'December',
@@ -59,7 +63,7 @@ export default function Rentals() {
                 <div className="w-full h-50 bg-cover flex flex-col items-center" style={{ backgroundImage: `url(${gymImage})` }}>
                     <div className="relative top-0 right-0 inset-0 w-full h-50 bg-black opacity-60"></div>
                     <h1 className="relative top-0 right-0 h-90 text-5xl -mt-30 text-center font-bold text-maplegreen">RENTALS</h1>
-                    <p className="relative top-0 right-0 -mt-75 sm:mx-15 text-center text-xl font-bold text-white ">Book a date on the calendar below!</p>
+                    <p className="relative top-0 right-0 -mt-75 sm:mx-15 text-center text-xl font-bold text-white ">Rentals start at the affordable price of $30.00 and $15 for every hour! (Plus tax)</p>
                 </div>
             </div>
             <div className="w-full mx-auto p-4 mt-5">
@@ -74,10 +78,14 @@ export default function Rentals() {
                         Next.
                     </button>
                 </div>
-
-                <table className="w-full table-auto border-collapse">
+                <div className="mx-auto my-5 text-center w-20">
+                    <h1 className="font-bold text-xl">Legend:</h1>
+                    <p className="bg-maplered">Booked</p>
+                    <p className="">Open</p>
+                </div>
+                <table className="w-20 sm:w-full table-auto border-collapse">
                     <thead>
-                        <tr className="bg-gray-200">
+                        <tr className="bg-mapleorange">
                             <th className="p-2 text-center">Sun</th>
                             <th className="p-2 text-center">Mon</th>
                             <th className="p-2 text-center">Tue</th>
@@ -91,7 +99,7 @@ export default function Rentals() {
                         {weeks.map((week, index) => (
                             <tr key={index}>
                             {week.map((day, i) => (
-                                <td key={i} className="p-4 text-center border hover:bg-gray-300">
+                                <td key={i} className={`p-4 text-center border hover:bg-gray-300 ${isBooked(day) ? 'bg-maplered hover:bg-maplered' : ''}`}>
                                     <button onClick={scrollToSection} className='w-full h-full'>
                                         {day ? (
                                             <span className="block p-2 rounded-full">{day}</span>
