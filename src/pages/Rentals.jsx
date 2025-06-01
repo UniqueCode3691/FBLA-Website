@@ -68,13 +68,13 @@ export default function Rentals() {
             </div>
             <div className="w-full mx-auto p-4 mt-5">
                 <div className="flex justify-between items-center mb-4">
-                    <button onClick={prevMonth} className="sm:text-xl p-2 bg-maplegreen rounded-xl hover:bg-green-900">
+                    <button onClick={prevMonth} className="sm:text-xl p-2 bg-maplegreen rounded-xl hover:bg-green-900 font-bold">
                         Prev.
                     </button>
                     <h2 className="text-xl sm:text-4xl font-bold">
-                        {monthNames[currentMonth]}, {currentYear}
+                        {monthNames[currentMonth]} {currentYear}
                     </h2>
-                    <button onClick={nextMonth} className="sm:text-xl p-2 bg-maplegreen rounded-xl hover:bg-green-900">
+                    <button onClick={nextMonth} className="sm:text-xl p-2 bg-maplegreen rounded-xl hover:bg-green-900 font-bold">
                         Next.
                     </button>
                 </div>
@@ -85,7 +85,7 @@ export default function Rentals() {
                 </div>
                 <table className="w-20 sm:w-full table-auto border-collapse">
                     <thead>
-                        <tr className="bg-gray-400">
+                        <tr className="bg-maplebrown">
                             <th className="p-2 text-center">Sun</th>
                             <th className="p-2 text-center">Mon</th>
                             <th className="p-2 text-center">Tue</th>
