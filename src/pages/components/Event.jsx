@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export default function Event({ event_date="January 1, 2025", event_time="3:00 PM EST", event_image=gymImage, event_cost="$5.00", event_name="Rec. Volleyball Game" }) {
     return(
-        <div className="flex w-75 sm:w-150 h-60 sm:h-75 mx-1 sm:mx-10 my-10">
+        <div className="flex w-75 sm:w-150 h-60 sm:h-75 mx-1 sm:mx-50 my-10">
             <div className="bg-mapletan w-50 sm:w-100 h-full rounded-l-xl">
                 <p className="ml-3 sm:ml-7 mt-3 sm:mt-7 text-xl sm:text-3xl font-bold">{event_name}</p>
                 <p className="ml-3 sm:ml-8 text-sm sm:text-lg">MRHS Gymnasium</p>
